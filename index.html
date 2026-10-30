@@ -2,711 +2,347 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Karen Tang — Public Relations student at Fairfield University, interested in marketing, communications, and digital storytelling.">
-    <title>Karen Tang | Communications & Marketing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karen Tang's professional portfolio in public relations, marketing, and communications.">
+  <title>Karen Tang | Marketing & Communications</title>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header class="site-header">
-        <nav class="navigation container" aria-label="Main navigation">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo">KT<span>.</span></a>
 
-            <a href="#home" class="logo">KT.</a>
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-            <button class="menu-toggle"
-                    aria-label="Open navigation menu"
-                    aria-expanded="false"
-                    aria-controls="nav-links">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#contact" class="nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#leadership">Leadership</a></li>
-                <li><a href="#contact" class="nav-contact">Contact</a></li>
-            </ul>
+  <main>
 
-        </nav>
-    </header>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">PUBLIC RELATIONS · MARKETING · COMMUNICATIONS</p>
 
+        <h1>Hi, I'm <span>Karen Tang.</span></h1>
 
-    <main>
+        <p class="hero-subtitle">
+          A Fairfield University student passionate about storytelling,
+          digital marketing, and building meaningful connections.
+        </p>
 
-        <!-- Hero Section -->
-        <section class="hero container" id="home">
+        <div class="hero-buttons">
+          <a href="#experience" class="button button-primary">Explore My Experience</a>
+          <a href="#contact" class="button button-secondary">Get in Touch</a>
+        </div>
 
-            <div class="hero-content">
+        <div class="hero-location">
+          <span class="location-dot"></span>
+          Hopkinton, Massachusetts · Fairfield University
+        </div>
+      </div>
 
-                <p class="eyebrow">
-                    PUBLIC RELATIONS · MARKETING · COMMUNICATIONS
-                </p>
+      <div class="hero-image-wrapper">
+        <img
+          src="IMG_4144.jpg"
+          alt="Karen Tang at Fairfield University"
+          class="profile-photo">
+        <div class="photo-caption">
+          <span>Fairfield University</span>
+          <span>Redefining what's possible.</span>
+        </div>
+      </div>
+    </section>
 
-                <h1>
-                    Hi, I'm <span>Karen Tang.</span>
-                </h1>
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2>Connecting people through <span>communication.</span></h2>
+        </div>
 
-                <h2>
-                    Creative thinking.<br>
-                    Meaningful connections.
-                </h2>
+        <div class="about-copy">
+          <p>
+            I'm a Public Relations student at Fairfield University with
+            minors in Marketing and Public Health. I'm interested in how
+            thoughtful storytelling, creative content, and strategic
+            communication can bring people and organizations together. Specifically in the medical marketing aspect from my own experiences. 
+          </p>
 
-                <p class="hero-description">
-                    I'm a Public Relations student at Fairfield University
-                    interested in the intersection of marketing, storytelling,
-                    and digital communications. I enjoy creating content,
-                    connecting with audiences, and bringing ideas to life.
-                </p>
+          <p>
+            Through internships, campus involvement, and student leadership,
+            I've developed experience in social media, content creation,
+            event coordination, community engagement, and brand storytelling.
+          </p>
 
-                <div class="hero-buttons">
-                    <a href="#experience" class="button button-dark">
-                        Explore my experience <span>↗</span>
-                    </a>
+          <p>
+            I enjoy combining creativity with organization and strategy to
+            create experiences and communications that make an impact.
+          </p>
+        </div>
+      </div>
+    </section>
 
-                    <a href="#contact" class="button button-outline">
-                        Get in touch <span>↗</span>
-                    </a>
-                </div>
+    <!-- EXPERIENCE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'VE BEEN WORKING ON</p>
+          <h2>Professional Experience</h2>
+          <p class="section-intro">
+            Building experience across digital marketing, communications,
+            content creation, and student engagement.
+          </p>
+        </div>
 
-                <div class="hero-location">
-                    <span class="location-dot"></span>
-                    Fairfield University · Fairfield, CT
-                </div>
+        <div class="experience-list">
 
+          <article class="experience-card">
+            <div class="experience-date">July 2026 – Present</div>
+            <div class="experience-details">
+              <h3>Brand Ambassador & Project Management Lead</h3>
+              <p class="organization">Langsdom · Remote</p>
+              <ul>
+                <li>Create and publish social media content and short-form videos.</li>
+                <li>Coordinate meetings, content creation, and social media outreach.</li>
+                <li>Support TikTok Shop setup and gather consumer feedback.</li>
+              </ul>
             </div>
+          </article>
 
-            <div class="hero-image">
-                <img
-                    src="profile.jpg"
-                    alt="Professional portrait of Karen Tang"
-                    class="profile-photo"
-                >
-                <div class="image-caption">
-                    <span>GET TO KNOW ME</span>
-                    <span>01 / 06</span>
-                </div>
+          <article class="experience-card">
+            <div class="experience-date">January 2026 – Present</div>
+            <div class="experience-details">
+              <h3>Content Creator Intern</h3>
+              <p class="organization">Upptik · Remote</p>
+              <ul>
+                <li>Create multimedia content, including short-form videos and blog-style articles.</li>
+                <li>Contribute to a portfolio of more than 40 posts for high school students.</li>
+                <li>Develop content designed to inform and engage the Upptik community.</li>
+              </ul>
             </div>
+          </article>
 
-        </section>
-
-
-        <!-- About Section -->
-        <section class="section about-section" id="about">
-
-            <div class="container">
-
-                <div class="section-label">
-                    <span>01</span>
-                    <span>A LITTLE ABOUT ME</span>
-                </div>
-
-                <div class="about-grid">
-
-                    <div>
-                        <h2 class="section-heading">
-                            Communication<br>
-                            with a <span>creative mindset.</span>
-                        </h2>
-                    </div>
-
-                    <div class="about-copy">
-
-                        <p>
-                            I'm currently pursuing a Bachelor of Arts in
-                            Public Relations at Fairfield University, with
-                            minors in Marketing and Public Health.
-                        </p>
-
-                        <p>
-                            Through my experiences in social media, content
-                            creation, brand ambassadorship, and campus
-                            involvement, I've developed an interest in how
-                            organizations communicate their stories and
-                            build meaningful relationships with their audiences.
-                        </p>
-
-                        <p>
-                            From creating short-form videos to coordinating
-                            projects and gathering consumer feedback, I enjoy
-                            combining creativity, communication, and collaboration.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="about-facts">
-
-                    <div class="fact">
-                        <span class="fact-label">Currently</span>
-                        <strong>Fairfield University</strong>
-                    </div>
-
-                    <div class="fact">
-                        <span class="fact-label">Studying</span>
-                        <strong>Public Relations</strong>
-                    </div>
-
-                    <div class="fact">
-                        <span class="fact-label">Minors</span>
-                        <strong>Marketing & Public Health</strong>
-                    </div>
-
-                    <div class="fact">
-                        <span class="fact-label">Expected graduation</span>
-                        <strong>May 2028</strong>
-                    </div>
-
-                </div>
-
+          <article class="experience-card">
+            <div class="experience-date">March 2026 – Present</div>
+            <div class="experience-details">
+              <h3>Logistics New Student Leader</h3>
+              <p class="organization">Fairfield University · Office of Student Engagement</p>
+              <ul>
+                <li>Assist with logistics and event planning for two orientation sessions.</li>
+                <li>Complete training to support incoming students and their families.</li>
+                <li>Help create an organized and welcoming orientation experience.</li>
+              </ul>
             </div>
-
-        </section>
-
-
-        <!-- Experience Section -->
-        <section class="section experience-section" id="experience">
-
-            <div class="container">
-
-                <div class="section-label">
-                    <span>02</span>
-                    <span>PROFESSIONAL EXPERIENCE</span>
-                </div>
-
-                <div class="section-intro">
-                    <h2 class="section-heading">
-                        Learning by<br>
-                        <span>doing.</span>
-                    </h2>
-
-                    <p>
-                        Building experience through hands-on opportunities
-                        in marketing, communications, content creation,
-                        and community engagement.
-                    </p>
-                </div>
-
-
-                <div class="experience-list">
-
-                    <!-- Langsdom -->
-                    <article class="experience-item">
-
-                        <div class="experience-date">
-                            JULY 2026 — PRESENT
-                            <span>REMOTE</span>
-                        </div>
-
-                        <div class="experience-details">
-
-                            <h3>Langsdom</h3>
-
-                            <p class="job-title">
-                                Brand Ambassador & Project Management Lead
-                            </p>
-
-                            <ul>
-                                <li>
-                                    Create and publish engaging social media
-                                    content and short-form videos to promote
-                                    products and strengthen brand awareness.
-                                </li>
-                                <li>
-                                    Coordinate team meetings, oversee content
-                                    creation initiatives, support TikTok Shop
-                                    setup, and manage social media outreach.
-                                </li>
-                                <li>
-                                    Gather and communicate consumer feedback
-                                    to support product improvements and
-                                    marketing strategies.
-                                </li>
-                            </ul>
-
-                            <div class="tags">
-                                <span>Social Media</span>
-                                <span>Project Management</span>
-                                <span>Brand Awareness</span>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Upptik Content Creator -->
-                    <article class="experience-item">
-
-                        <div class="experience-date">
-                            JANUARY 2026 — PRESENT
-                            <span>REMOTE</span>
-                        </div>
-
-                        <div class="experience-details">
-
-                            <h3>Upptik</h3>
-
-                            <p class="job-title">Content Creator Intern</p>
-
-                            <ul>
-                                <li>
-                                    Created and published 40+ multimedia
-                                    posts, including short-form videos,
-                                    social media content, and blog-style
-                                    articles.
-                                </li>
-                                <li>
-                                    Combined mentorship, storytelling, and
-                                    entertainment to engage and inspire
-                                    high school students.
-                                </li>
-                            </ul>
-
-                            <div class="tags">
-                                <span>Content Creation</span>
-                                <span>Storytelling</span>
-                                <span>Social Media</span>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Student Engagement -->
-                    <article class="experience-item">
-
-                        <div class="experience-date">
-                            MARCH 2026 — PRESENT
-                            <span>FAIRFIELD, CT</span>
-                        </div>
-
-                        <div class="experience-details">
-
-                            <h3>Fairfield University</h3>
-
-                            <p class="job-title">
-                                Logistics New Student Leader · Office of Student Engagement
-                            </p>
-
-                            <ul>
-                                <li>
-                                    Assist with logistics and event planning
-                                    for two New Student Orientation sessions.
-                                </li>
-                                <li>
-                                    Participate in in-depth training on
-                                    supporting new students and their families.
-                                </li>
-                            </ul>
-
-                            <div class="tags">
-                                <span>Event Planning</span>
-                                <span>Student Engagement</span>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Quick Center -->
-                    <article class="experience-item">
-
-                        <div class="experience-date">
-                            SEPTEMBER 2025 — PRESENT
-                            <span>FAIRFIELD, CT</span>
-                        </div>
-
-                        <div class="experience-details">
-
-                            <h3>Fairfield University · Quick Center for the Arts</h3>
-
-                            <p class="job-title">
-                                The Schola Street Team · Intern
-                            </p>
-
-                            <ul>
-                                <li>
-                                    Create written and multimedia content
-                                    for social media and promotional campaigns
-                                    while building a professional communications portfolio.
-                                </li>
-                                <li>
-                                    Create Instagram content and interview
-                                    guest speakers to promote arts programming
-                                    and increase audience engagement.
-                                </li>
-                            </ul>
-
-                            <div class="tags">
-                                <span>Arts Communications</span>
-                                <span>Instagram</span>
-                                <span>Interviews</span>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Bubble -->
-                    <article class="experience-item">
-
-                        <div class="experience-date">
-                            MARCH 2025 — PRESENT
-                            <span>REMOTE</span>
-                        </div>
-
-                        <div class="experience-details">
-
-                            <h3>Bubble Skincare</h3>
-
-                            <p class="job-title">Campus Ambassador</p>
-
-                            <ul>
-                                <li>
-                                    Promote Bubble products and routines
-                                    through creative, on-trend social media
-                                    content and challenges.
-                                </li>
-                                <li>
-                                    Participate in retail brand hunts at
-                                    Target, CVS, and other stores to highlight
-                                    product availability and visibility.
-                                </li>
-                                <li>
-                                    Provide feedback and insights to
-                                    influence brand strategy, marketing
-                                    initiatives, and product decisions.
-                                </li>
-                            </ul>
-
-                            <div class="tags">
-                                <span>Brand Ambassadorship</span>
-                                <span>Consumer Feedback</span>
-                                <span>Marketing</span>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Upptik Community -->
-                    <article class="experience-item">
-
-                        <div class="experience-date">
-                            JUNE — AUGUST 2025
-                            <span>REMOTE</span>
-                        </div>
-
-                        <div class="experience-details">
-
-                            <h3>Upptik</h3>
-
-                            <p class="job-title">Community & Media Intern</p>
-
-                            <ul>
-                                <li>
-                                    Created and published 40 multimedia
-                                    posts, including short-form writing,
-                                    videos, and discussion prompts.
-                                </li>
-                                <li>
-                                    Used Canva to create graphics and
-                                    developed TikTok videos informed by
-                                    social media trends.
-                                </li>
-                                <li>
-                                    Participated in the Upptik online
-                                    community, team check-ins, creative
-                                    brainstorms, and user feedback cycles.
-                                </li>
-                            </ul>
-
-                            <div class="tags">
-                                <span>Canva</span>
-                                <span>TikTok</span>
-                                <span>Community Engagement</span>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Admissions -->
-                    <article class="experience-item">
-
-                        <div class="experience-date">
-                            SEPTEMBER 2024 — MAY 2025
-                            <span>FAIRFIELD, CT</span>
-                        </div>
-
-                        <div class="experience-details">
-
-                            <h3>Fairfield University · Office of Undergraduate Admissions</h3>
-
-                            <p class="job-title">Diversity Recruitment Team</p>
-
-                            <ul>
-                                <li>
-                                    Assisted Admissions with initiatives
-                                    under the Multicultural Visit Program (MVP).
-                                </li>
-                                <li>
-                                    Supported visit events, letter-writing
-                                    campaigns, student panels, campus tours,
-                                    and hosting experiences.
-                                </li>
-                                <li>
-                                    Supported recruitment efforts for
-                                    Fairfield University's Office of
-                                    Undergraduate Admissions.
-                                </li>
-                            </ul>
-
-                            <div class="tags">
-                                <span>Community Outreach</span>
-                                <span>Recruitment</span>
-                                <span>Campus Engagement</span>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-date">September 2025 – Present</div>
+            <div class="experience-details">
+              <h3>The Schola Street Team Intern</h3>
+              <p class="organization">Fairfield University · Quick Center for the Arts</p>
+              <ul>
+                <li>Develop written and multimedia content for arts programming.</li>
+                <li>Contribute to social media and promotional campaigns.</li>
+                <li>Create Instagram content and interview guest speakers.</li>
+              </ul>
             </div>
+          </article>
 
-        </section>
-
-
-        <!-- Education Section -->
-        <section class="section education-section" id="education">
-
-            <div class="container">
-
-                <div class="section-label">
-                    <span>03</span>
-                    <span>EDUCATION</span>
-                </div>
-
-                <div class="education-grid">
-
-                    <div>
-                        <h2 class="section-heading">
-                            Building the<br>
-                            <span>foundation.</span>
-                        </h2>
-                    </div>
-
-                    <div class="education-card">
-
-                        <span class="education-date">
-                            EXPECTED MAY 2028 · FAIRFIELD, CT
-                        </span>
-
-                        <h3>Fairfield University</h3>
-
-                        <p class="degree">
-                            Bachelor of Arts
-                        </p>
-
-                        <p>
-                            Major: Public Relations
-                        </p>
-
-                        <p>
-                            Minors: Marketing and Public Health
-                        </p>
-
-                        <div class="coursework">
-                            <h4>Course Highlights</h4>
-
-                            <ul>
-                                <li>Argument and Advocacy</li>
-                                <li>Mass Media and Society</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-
+          <article class="experience-card">
+            <div class="experience-date">September 2024 – May 2025</div>
+            <div class="experience-details">
+              <h3>Diversity Recruitment Team</h3>
+              <p class="organization">Fairfield University · Office of Undergraduate Admissions</p>
+              <ul>
+                <li>Supported Multicultural Visit Program events and recruitment initiatives.</li>
+                <li>Participated in student panels, campus tours, and prospective student hosting.</li>
+                <li>Helped connect prospective students with the Fairfield community.</li>
+              </ul>
             </div>
+          </article>
 
-        </section>
-
-
-        <!-- Leadership and Skills -->
-        <section class="section leadership-section" id="leadership">
-
-            <div class="container">
-
-                <div class="section-label">
-                    <span>04</span>
-                    <span>LEADERSHIP & CAPABILITIES</span>
-                </div>
-
-                <h2 class="section-heading">
-                    More than<br>
-                    <span>communications.</span>
-                </h2>
-
-                <div class="leadership-grid">
-
-                    <div class="leadership-column">
-
-                        <h3>Leadership & Activities</h3>
-
-                        <div class="leadership-entry">
-                            <strong>Ignatian Residential College</strong>
-                            <span>Leadership Track</span>
-                        </div>
-
-                        <div class="leadership-entry">
-                            <strong>Public Relations Student Society of America</strong>
-                            <span>PRSSA</span>
-                        </div>
-
-                        <div class="leadership-entry">
-                            <strong>42 Langguth Hall</strong>
-                            <span>Marketing Director</span>
-                        </div>
-
-                        <div class="leadership-entry">
-                            <strong>Inter-Housing Hall Association</strong>
-                            <span>Director of Advocacy and Diversity</span>
-                        </div>
-
-                        <div class="leadership-entry">
-                            <strong>Senior Week Experience</strong>
-                            <span>Marketing Coordinator</span>
-                        </div>
-
-                    </div>
-
-
-                    <div class="skills-column">
-
-                        <h3>Skills & Tools</h3>
-
-                        <p class="skills-description">
-                            Platforms and tools used across content
-                            creation, communications, and marketing.
-                        </p>
-
-                        <div class="skills-list">
-                            <span>Google Docs</span>
-                            <span>Google Sheets</span>
-                            <span>Google Drive</span>
-                            <span>TikTok</span>
-                            <span>Instagram</span>
-                            <span>CapCut</span>
-                            <span>LinkedIn</span>
-                            <span>Canva</span>
-                        </div>
-
-                        <h3 class="interests-heading">Interests</h3>
-
-                        <p>
-                            TikTok · Community Service · Social Justice
-                        </p>
-
-                    </div>
-
-                </div>
-
+          <article class="experience-card">
+            <div class="experience-date">June 2025 – August 2025</div>
+            <div class="experience-details">
+              <h3>Community & Media Intern</h3>
+              <p class="organization">Upptik</p>
+              <ul>
+                <li>Created more than 40 multimedia posts, including Canva graphics and TikTok videos.</li>
+                <li>Contributed to community engagement and content brainstorming.</li>
+                <li>Incorporated feedback to strengthen content and creative projects.</li>
+              </ul>
             </div>
+          </article>
 
-        </section>
-
-
-        <!-- Contact Section -->
-        <section class="contact-section" id="contact">
-
-            <div class="container contact-content">
-
-                <div class="section-label">
-                    <span>05</span>
-                    <span>LET'S CONNECT</span>
-                </div>
-
-                <p class="eyebrow">HAVE A PROJECT OR OPPORTUNITY?</p>
-
-                <h2>
-                    Let's make<br>
-                    something <span>meaningful.</span>
-                </h2>
-
-                <p class="contact-description">
-                    I'm always interested in learning, contributing,
-                    and growing through new opportunities in
-                    communications, marketing, and creative work.
-                </p>
-
-                <div class="contact-buttons">
-
-                    <a href="mailto:karen.tang@student.fairfield.edu"
-                       class="button button-light">
-                        Email me ↗
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/karen-tang18/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="button button-contact-outline">
-                        LinkedIn ↗
-                    </a>
-
-                </div>
-
-                <p class="contact-email">
-                    karen.tang@student.fairfield.edu
-                </p>
-
+          <article class="experience-card">
+            <div class="experience-date">March 2025 – Present</div>
+            <div class="experience-details">
+              <h3>Campus Ambassador</h3>
+              <p class="organization">Bubble Skincare</p>
+              <ul>
+                <li>Participate in social media content initiatives and brand challenges.</li>
+                <li>Conduct retail brand hunts and share observations.</li>
+                <li>Provide consumer feedback to support brand strategy.</li>
+              </ul>
             </div>
+          </article>
 
-        </section>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <!-- EDUCATION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">MY ACADEMIC BACKGROUND</p>
+          <h2>Education</h2>
+        </div>
 
-
-    <!-- Footer -->
-    <footer class="site-footer">
-
-        <div class="container footer-content">
-
-            <a href="#home" class="logo">KT.</a>
-
-            <p>
-                Karen Tang · Public Relations · Fairfield University
+        <div class="education-card">
+          <div class="education-mark">F</div>
+          <div>
+            <h3>Fairfield University</h3>
+            <p class="organization">Fairfield, Connecticut</p>
+            <p class="degree">
+              Bachelor of Arts in Public Relations
             </p>
+            <p class="degree">
+              Minors in Marketing and Public Health
+            </p>
+            <p class="education-date">Expected May 2028</p>
 
-            <a href="#home" class="back-to-top">
-                Back to top ↑
-            </a>
+            <div class="coursework">
+              <span>Argument and Advocacy</span>
+              <span>Mass Media and Society</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- LEADERSHIP AND SKILLS -->
+    <section class="section leadership-section" id="leadership">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">BEYOND THE CLASSROOM</p>
+          <h2>Leadership & Skills</h2>
         </div>
 
-        <div class="copyright">
-            © <span id="current-year">2026</span> Karen Tang. All rights reserved.
+        <div class="two-column-grid">
+          <div class="content-panel">
+            <h3>Campus Leadership & Involvement</h3>
+            <ul class="simple-list">
+              <li>Ignatian Residential College – Leadership Track</li>
+              <li>Public Relations Student Society of America (PRSSA)</li>
+              <li>Marketing Director – 42 Langguth Hall</li>
+              <li>Residence Hall Association (RHA)</li>
+              <li>Director of Advocacy and Diversity – IRHA</li>
+              <li>Marketing Coordinator – Senior Week Experience</li>
+            </ul>
+          </div>
+
+          <div class="content-panel">
+            <h3>Skills & Platforms</h3>
+            <div class="skill-group">
+              <h4>Marketing & Creative</h4>
+              <div class="skill-tags">
+                <span>Social Media</span>
+                <span>Content Creation</span>
+                <span>Brand Storytelling</span>
+                <span>Canva</span>
+                <span>CapCut</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h4>Digital Platforms</h4>
+              <div class="skill-tags">
+                <span>TikTok</span>
+                <span>Instagram</span>
+                <span>LinkedIn</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h4>Productivity</h4>
+              <div class="skill-tags">
+                <span>Google Workspace</span>
+                <span>Event Coordination</span>
+                <span>Community Engagement</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-    </footer>
+        <div class="interests">
+          <p class="eyebrow">PERSONAL INTERESTS</p>
+          <p>TikTok · Community Service · Social Justice</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-content">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Have a project or opportunity in mind?</h2>
+        <p>
+          I'm always interested in connecting with people and exploring
+          opportunities in public relations, marketing, and communications.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:karen.tang@student.fairfield.edu" class="button button-primary">
+            Email Me
+          </a>
+          <a href="https://www.linkedin.com/in/karen-tang18/"
+             target="_blank" rel="noopener noreferrer"
+             class="button button-secondary">
+            Connect on LinkedIn
+          </a>
+        </div>
+
+        <p class="contact-detail">
+          Hopkinton, Massachusetts · (508) 685-9281
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo">KT<span>.</span></a>
+      <p>© <span id="year"></span> Karen Tang. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
 
 </body>
 </html>
