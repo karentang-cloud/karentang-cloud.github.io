@@ -1,81 +1,34 @@
 
-/* =========================================
-   KAREN TANG — WEBSITE INTERACTIONS
-   ========================================= */
+// Mobile navigation menu
 
-document.addEventListener("DOMContentLoaded", function () {
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 
-    // Mobile navigation
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
-    const navigationLinks = document.querySelectorAll(".nav-links a");
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("active");
 
-    if (menuToggle && navLinks) {
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+  });
 
-        menuToggle.addEventListener("click", function () {
+  // Close the menu after selecting a navigation link
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+    });
+  });
+}
 
-            const isOpen = navLinks.classList.toggle("open");
+// Automatically update the copyright year
 
-            menuToggle.setAttribute(
-                "aria-expanded",
-                String(isOpen)
-            );
+const yearElement = document.getElementById("year");
 
-            menuToggle.setAttribute(
-                "aria-label",
-                isOpen ? "Close navigation menu" : "Open navigation menu"
-            );
-
-        });
-
-        // Close the mobile menu after selecting a section
-        navigationLinks.forEach(function (link) {
-
-            link.addEventListener("click", function () {
-
-                navLinks.classList.remove("open");
-
-                menuToggle.setAttribute("aria-expanded", "false");
-
-                menuToggle.setAttribute(
-                    "aria-label",
-                    "Open navigation menu"
-                );
-
-            });
-
-        });
-
-        // Close the menu if the user clicks outside navigation
-        document.addEventListener("click", function (event) {
-
-            const clickedInsideNavigation =
-                navLinks.contains(event.target) ||
-                menuToggle.contains(event.target);
-
-            if (!clickedInsideNavigation) {
-
-                navLinks.classList.remove("open");
-
-                menuToggle.setAttribute("aria-expanded", "false");
-
-                menuToggle.setAttribute(
-                    "aria-label",
-                    "Open navigation menu"
-                );
-
-            }
-
-        });
-
-    }
-
-
-    // Automatically update the footer copyright year
-    const yearElement = document.getElementById("current-year");
-
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-
-});
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
